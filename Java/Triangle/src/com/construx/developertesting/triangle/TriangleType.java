@@ -1,8 +1,29 @@
+// ***************************************************************************
+// Copyright (c) 2015, Construx Software, Inc., All Rights Reserved.
+//
+// This code is the exclusive property of Construx Software, Inc. 
+// It may ONLY be used by learners during Construx's workshops or 
+// by individuals who are being coached by Construx on a project.
+//
+// This code may NOT be copied or used for any other purpose without the prior
+// written consent of Construx Software, Inc.
+// ****************************************************************************
 package com.construx.developertesting.triangle;
 
+/**
+ * Solution key for the triangle problem in Myers'
+ * "The Art of Software Testing".
+ * 
+ * @author melvinperez
+ * 
+ */
 public enum TriangleType {
 	INVALID, SCALENE, EQUILATERAL, ISOSCELES;
 
+	/**
+	 * This method take @param three values representing the lengths of the
+	 * sides of a triangle and @return the type of triangle they would form.
+	 */
 	public static TriangleType identify(final int a, final int b, final int c) {
 		if (sideLenghtsFormATriangle(a, b, c))
 			if (allSidelengthsAreEqual(a, b, c))
