@@ -1,13 +1,14 @@
 // ***************************************************************************
 // Copyright (c) 2015, Construx Software, Inc., All Rights Reserved.
 //
-// This code is the exclusive property of Construx Software, Inc. 
-// It may ONLY be used by learners during Construx's workshops or 
-// by individuals who are being coached by Construx on a project.
+// This code is the exclusive property of Construx Software, Inc. It may ONLY 
+// be used by learners during Construx's workshops or by individuals who are 
+// being coached by Construx on a project.
 //
 // This code may NOT be copied or used for any other purpose without the prior
 // written consent of Construx Software, Inc.
 // ****************************************************************************
+
 package com.construx.developertesting.triangle;
 
 import static org.junit.Assert.assertEquals;
@@ -25,12 +26,12 @@ public class TriangleTypeTest {
 
 	/**
 	 * 1. Do you have a test case that represents a valid scalene triangle?
-	 * (Note that test cases such as 1, 2, 3 and 2, 5, 10 do not warrant a “yes”
+	 * (Note that test cases such as 1, 2, 3 and 2, 5, 10 do not warrant a "yes"
 	 * answer because there does not exist a triangle having these dimensions.)
 	 */
 	@Test
 	public void classify_aTriangleWithThreeDifferentSidelenghts_asScalene() {
-		assertEquals(TriangleType.SCALENE, TriangleType.identify(3, 5, 4));
+		assertEquals(TriangleType.SCALENE, TriangleType.classify(3, 5, 4));
 	}
 
 	/**
@@ -38,7 +39,7 @@ public class TriangleTypeTest {
 	 */
 	@Test
 	public void classify_aTriangleWithThreeEqualSidelengths_asEquilateral() {
-		assertEquals(TriangleType.EQUILATERAL, TriangleType.identify(3, 3, 3));
+		assertEquals(TriangleType.EQUILATERAL, TriangleType.classify(3, 3, 3));
 	}
 
 	/**
@@ -52,9 +53,9 @@ public class TriangleTypeTest {
 	 */
 	@Test
 	public void classify_aTriangleWithTwoEqualSidelenghts_asIsosceles() {
-		assertEquals(TriangleType.ISOSCELES, TriangleType.identify(3, 3, 4));
-		assertEquals(TriangleType.ISOSCELES, TriangleType.identify(3, 4, 3));
-		assertEquals(TriangleType.ISOSCELES, TriangleType.identify(4, 3, 3));
+		assertEquals(TriangleType.ISOSCELES, TriangleType.classify(3, 3, 4));
+		assertEquals(TriangleType.ISOSCELES, TriangleType.classify(3, 4, 3));
+		assertEquals(TriangleType.ISOSCELES, TriangleType.classify(4, 3, 3));
 	}
 
 	/**
@@ -66,9 +67,9 @@ public class TriangleTypeTest {
 	 */
 	@Test
 	public void classify_aTriangleWithSidelengthsNotGreaterThanZero_asInvalid() {
-		assertEquals(TriangleType.INVALID, TriangleType.identify(0, 4, 5));
-		assertEquals(TriangleType.INVALID, TriangleType.identify(-1, 4, 5));
-		assertEquals(TriangleType.INVALID, TriangleType.identify(0, 0, 0));
+		assertEquals(TriangleType.INVALID, TriangleType.classify(0, 4, 5));
+		assertEquals(TriangleType.INVALID, TriangleType.classify(-1, 4, 5));
+		assertEquals(TriangleType.INVALID, TriangleType.classify(0, 0, 0));
 	}
 
 	/**
@@ -82,9 +83,9 @@ public class TriangleTypeTest {
 	 */
 	@Test
 	public void classify_aTriangleWithTheSumOfTwoSidelengthsEqualToTheThird_asInvalid() {
-		assertEquals(TriangleType.INVALID, TriangleType.identify(1, 2, 3));
-		assertEquals(TriangleType.INVALID, TriangleType.identify(2, 3, 1));
-		assertEquals(TriangleType.INVALID, TriangleType.identify(3, 2, 1));
+		assertEquals(TriangleType.INVALID, TriangleType.classify(1, 2, 3));
+		assertEquals(TriangleType.INVALID, TriangleType.classify(2, 3, 1));
+		assertEquals(TriangleType.INVALID, TriangleType.classify(3, 2, 1));
 	}
 
 	/**
@@ -98,8 +99,8 @@ public class TriangleTypeTest {
 	 */
 	@Test
 	public void classify_aTriangleWithTheSumOfTwoSidelenghtsLessThanTheThird_asInvalid() {
-		assertEquals(TriangleType.INVALID, TriangleType.identify(1, 2, 4));
-		assertEquals(TriangleType.INVALID, TriangleType.identify(1, 4, 2));
-		assertEquals(TriangleType.INVALID, TriangleType.identify(4, 1, 2));
+		assertEquals(TriangleType.INVALID, TriangleType.classify(1, 2, 4));
+		assertEquals(TriangleType.INVALID, TriangleType.classify(1, 4, 2));
+		assertEquals(TriangleType.INVALID, TriangleType.classify(4, 1, 2));
 	}
 }
