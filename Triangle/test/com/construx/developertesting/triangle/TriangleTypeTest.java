@@ -31,7 +31,7 @@ public class TriangleTypeTest {
      */
     @Test
     public void classify_aTriangleWithThreeDifferentSidelenghts_asScalene() {
-        assertEquals(TriangleType.SCALENE, TriangleType.classify(3, 5, 4));
+        assertEquals(TriangleType.SCALENE, TriangleType.classify(3, 4, 5));
     }
 
     /**

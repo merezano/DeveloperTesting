@@ -25,10 +25,10 @@ public enum TriangleType {
      * sides of a triangle and @return the type of triangle they would form.
      */
     public static TriangleType classify(final int a, final int b, final int c) {
-        if (sideLenghtsFormATriangle(a, b, c))
-            if (allSidelengthsAreEqual(a, b, c))
+        if (sidesFormATriangle(a, b, c))
+            if (allSidesAreEqual(a, b, c))
                 return EQUILATERAL;
-            else if (twoOfTheSidelengthsAreEqual(a, b, c))
+            else if (twoSidesAreEqual(a, b, c))
                 return ISOSCELES;
             else
                 return SCALENE;
@@ -36,11 +36,11 @@ public enum TriangleType {
             return INVALID;
     }
 
-    private static boolean twoOfTheSidelengthsAreEqual(int a, int b, int c) {
+    private static boolean twoSidesAreEqual(int a, int b, int c) {
         return a == b || b == c || c == a;
     }
 
-    private static boolean allSidelengthsAreEqual(int a, int b, int c) {
+    private static boolean allSidesAreEqual(int a, int b, int c) {
         return a == b && b == c;
     }
 
@@ -52,7 +52,7 @@ public enum TriangleType {
      * @return True if the sum of the lengths of any two sides is greater than
      *         the length of the remaining side
      */
-    private static boolean sideLenghtsFormATriangle(int a, int b, int c) {
+    private static boolean sidesFormATriangle(int a, int b, int c) {
         return a + b > c && b + c > a && a + c > b;
     }
 }
