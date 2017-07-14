@@ -1,3 +1,12 @@
+/*******************************************************************************
+ * Copyright (c) 2017, Construx Software, Inc., All Rights Reserved.
+ * 
+ * This code is the exclusive property of Construx Software, Inc. and it may ONLY 
+ * be used by individuals who are being trained and coached by Construx Software, Inc..
+ * 
+ * This code may NOT be copied or used for any other purpose without the prior
+ * written consent of Construx Software, Inc.
+ ******************************************************************************/
 // ***************************************************************************
 // Copyright (c) 2015, Construx Software, Inc., All Rights Reserved.
 //
