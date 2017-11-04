@@ -18,7 +18,7 @@
 // written consent of Construx Software, Inc.
 // ****************************************************************************
 
-package com.construx.developertesting.triangle;
+package com.construx.codesamples.java.triangle;
 
 import static org.junit.Assert.assertEquals;
 

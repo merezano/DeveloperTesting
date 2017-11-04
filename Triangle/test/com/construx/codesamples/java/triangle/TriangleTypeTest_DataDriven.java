@@ -17,7 +17,7 @@
 // This code may NOT be copied or used for any other purpose without the prior
 // written consent of Construx Software, Inc.
 // ****************************************************************************
-package com.construx.developertesting.triangle;
+package com.construx.codesamples.java.triangle;
 
 import static org.junit.Assert.assertEquals;
 
