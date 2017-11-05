@@ -18,11 +18,13 @@
 // written consent of Construx Software, Inc.
 // ****************************************************************************
 
-package com.construx.codesamples.java.triangle;
+package com.construx.codesamples.triangle;
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
+
+import com.construx.codesamples.triangle.TriangleType;
 
 /**
  * This testcase class implements the test cases recommended in Myers'

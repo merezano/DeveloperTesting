@@ -7,7 +7,7 @@
  * This code may NOT be copied or used for any other purpose without the prior
  * written consent of Construx Software, Inc.
  ******************************************************************************/
-package com.construx.codesamples.java.triangle;
+package com.construx.codesamples.triangle;
 
 /**
  * Solution key for the triangle problem in Myers'

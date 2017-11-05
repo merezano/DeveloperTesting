@@ -17,7 +17,7 @@
 // This code may NOT be copied or used for any other purpose without the prior
 // written consent of Construx Software, Inc.
 // ****************************************************************************
-package com.construx.codesamples.java.triangle;
+package com.construx.codesamples.triangle;
 
 import static org.junit.Assert.assertEquals;
 
@@ -28,6 +28,8 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
+
+import com.construx.codesamples.triangle.TriangleType;
 
 @RunWith(Parameterized.class)
 public class TriangleTypeTest_DataDriven {
